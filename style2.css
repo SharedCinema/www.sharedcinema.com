@@ -1,0 +1,272 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+       
+}
+
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#fcfcfc;
+  	background-image:url('concrete.jpg');
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:1.5em;
+	font-weight:normal;
+	margin:0 0 1em;
+	
+}
+
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+	color:#f00087;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+div.article .line{
+	/* The dividing line inside of the article is darker: */
+	margin:1.3em 0;
+}
+
+div.footer .line{
+	margin:2em 0;
+}
+
+div.nav{
+
+	padding:0 5px;
+	position: fixed;
+	top:1em;
+    background-color: f00087;
+}
+
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+div.tw
+{
+  	float: right;
+    color:#111111;
+	display:inline;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px;
+	padding:7px 10px 4px;
+	text-transform:uppercase;
+	z-index: 3;
+}
+
+div.bar
+{
+	width:850px;
+  	height: 42px;
+	margin:0 auto;
+	position:fixed;
+    background-color:#FFFFFF;
+    z-index: 1;
+}
+
+div.nav ul li{
+	display:inline;
+  	color:FFFFFF;
+  	z-index: 2;
+     
+}
+
+div.nav ul li a,
+div.nav ul li a:visited{
+	color:#111111;
+	display:inline;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px;
+	padding:7px 10px 4px;
+	text-transform:uppercase;
+}
+
+div.nav ul li a:hover{
+	text-decoration:none;
+	background-color:#FFFFFF;
+}
+
+}
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+div.article{
+	margin:5em 0;
+	padding:20px;
+        background-color: #FFFFFF;
+	opacity:0.5;
+	text-shadow:0 2px 0 black;
+}
+
+div.image{
+	margin:5em 0;
+	padding:50px;
+	position: relative;
+	margin:5em 0;
+	width:900px;
+	display:inline;
+	
+  
+}
+
+div.imageX{
+	padding:10px;
+	position: relative;
+	width:200px;
+	float: left;
+	margin-left:15px;
+	
+  
+}
+
+div.figure{
+	float:right;
+	opacity:0.5;
+	padding:20px;
+	position: relative;
+	margin-left:15px;
+	overflow:hidden;
+        padding:20px;
+	width:500px;
+        background-color: #142830;
+}
+
+div.figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+div.figure img{
+	margin-left:-60px;
+}
+
+/* Footer styling: */
+
+div.footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+
+div.footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+div.footer a,div.footer a:visited{
+	color:#cccccc;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+div.footer a:hover{
+	text-decoration:none;
+
+}
+
+div.footer a.by{
+	float:left;
+
+}
+
+div.footer a.up{
+	float:right;
+}
+
+//Other
+div.custom #buffer { height: 500px; }
+
+.wrap {
+	  /* force the div to properly contain the floated images: */
+	  position:relative;
+	  float:right;
+	  clear:none;
+	  overflow:hidden;
+	}
+	.wrap img {
+	  position:relative;
+	  z-index:-2;
+	}
+	.wrap .desc {
+	  display:block;
+	  position:absolute;
+	  width:50%;
+	  top:30%;
+	  left:50%;
+	  z-index:-1;
+	  text-align:left;
